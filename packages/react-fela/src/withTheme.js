@@ -1,6 +1,6 @@
 /* @flow */
 import { createElement } from 'react'
-import { withThemeFactory } from 'fela-bindings'
+import { withThemeFactory } from '@stardust-ui/fela-bindings'
 
 import FelaTheme from './FelaTheme'
 

@@ -1,7 +1,7 @@
 /* @flow */
 // $FlowFixMe
 import { useContext } from 'react'
-import { combineRules } from 'fela'
+import { combineRules } from '@stardust-ui/fela'
 
 import { RendererContext, ThemeContext } from './context'
 

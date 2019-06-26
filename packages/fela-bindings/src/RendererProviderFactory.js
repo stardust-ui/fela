@@ -1,5 +1,5 @@
 /* @flow */
-import { render, rehydrate } from 'fela-dom'
+import { render, rehydrate } from '@stardust-ui/fela-dom'
 import objectEach from 'fast-loops/lib/objectEach'
 
 function hasDOM(renderer) {

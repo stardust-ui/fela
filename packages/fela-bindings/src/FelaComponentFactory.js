@@ -1,5 +1,5 @@
 /* @flow */
-import { combineRules } from 'fela'
+import { combineRules } from '@stardust-ui/fela'
 
 import deprecate from './_deprecate'
 

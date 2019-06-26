@@ -1,11 +1,5 @@
+import { FONT_TYPE, STATIC_TYPE, KEYFRAME_TYPE, RULE_TYPE } from 'fela-utils'
 import calculateNodeScore from '../calculateNodeScore'
-
-import {
-  FONT_TYPE,
-  STATIC_TYPE,
-  KEYFRAME_TYPE,
-  RULE_TYPE,
-} from '../../../../../fela-utils/src/styleTypes'
 
 describe('Calculating the node score', () => {
   it('should return 0', () => {

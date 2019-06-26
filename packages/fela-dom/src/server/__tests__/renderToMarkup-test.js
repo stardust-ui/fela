@@ -1,4 +1,4 @@
-import { createRenderer } from 'fela'
+import { createRenderer } from '@stardust-ui/fela'
 import { html as beautify } from 'js-beautify'
 
 import renderToMarkup from '../renderToMarkup'

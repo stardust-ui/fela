@@ -1,4 +1,4 @@
-import { createRenderer } from 'fela'
+import { createRenderer } from '@stardust-ui/fela'
 import renderToSheetList from '../renderToSheetList'
 
 describe('Rendering to a sheet list', () => {

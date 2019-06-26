@@ -1,6 +1,6 @@
 /* @flow */
 import { Component, Children, createElement } from 'react'
-import { RendererProviderFactory } from 'fela-bindings'
+import { RendererProviderFactory } from '@stardust-ui/fela-bindings'
 import PropTypes from 'prop-types'
 
 import { RendererContext } from './context'

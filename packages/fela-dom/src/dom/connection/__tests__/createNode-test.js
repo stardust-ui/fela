@@ -1,12 +1,7 @@
+import { RULE_TYPE, STATIC_TYPE, KEYFRAME_TYPE } from 'fela-utils'
 import { html as beautify } from 'js-beautify'
 
 import createNode from '../createNode'
-
-import {
-  RULE_TYPE,
-  STATIC_TYPE,
-  KEYFRAME_TYPE,
-} from '../../../../../fela-utils/src/styleTypes'
 
 import cleanHead from '../../__helpers__/cleanHead'
 
