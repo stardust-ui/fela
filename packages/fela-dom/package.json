@@ -1,6 +1,6 @@
 {
   "name": "@stardust-ui/fela-dom",
-  "version": "10.6.1",
+  "version": "10.6.2",
   "description": "Fela package for working with the DOM",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@stardust-ui/fela": "^10.6.1",
-    "@stardust-ui/fela-tools": "^10.6.1",
+    "@stardust-ui/fela-tools": "^10.6.2",
     "fela-preset-web": "^10.5.0"
   },
   "publishConfig": {

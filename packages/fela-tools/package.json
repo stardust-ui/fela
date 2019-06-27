@@ -1,6 +1,6 @@
 {
   "name": "@stardust-ui/fela-tools",
-  "version": "10.6.1",
+  "version": "10.6.2",
   "description": "Useful tools for working with Fela",
   "main": "lib/index.js",
   "module": "es/index.js",
