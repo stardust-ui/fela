@@ -32,6 +32,9 @@
     "react-addons-shallow-compare": "^15.6.2",
     "shallow-equal": "^1.0.0"
   },
+  "devDependencies": {
+    "react": "^16.8.6"
+  },
   "publishConfig": {
     "access": "public"
   },
