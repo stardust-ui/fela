@@ -1,7 +1,7 @@
 {
-  "name": "@stardust-ui/fela-dom",
+  "name": "@stardust-ui/fela-tools",
   "version": "10.5.0",
-  "description": "Fela package for working with the DOM",
+  "description": "Useful tools for working with Fela",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -15,26 +15,19 @@
   "repository": "https://github.com/rofrischmann/fela/",
   "keywords": [
     "fela",
-    "dynamic styling",
-    "stylesheet",
-    "css",
-    "styling",
+    "fela-tool",
     "cssinjs"
   ],
   "author": "Robin Frischmann",
   "license": "MIT",
+  "peerDependencies": {
+    "fela": "^10.0.0"
+  },
   "dependencies": {
-    "css-in-js-utils": "^3.0.0",
-    "fast-loops": "^1.0.1",
-    "fela-utils": "^10.5.0"
-  },
-  "devDependencies": {
     "@stardust-ui/fela": "^10.5.0",
-    "@stardust-ui/fela-tools": "^10.5.0",
-    "fela-preset-web": "^10.5.0"
-  },
-  "publishConfig": {
-    "access": "public"
+    "css-in-js-utils": "^3.0.0",
+    "fast-loops": "^1.0.0",
+    "fela-utils": "^10.5.0"
   },
   "gitHead": "4edeeffc5be2e05473a52c24523dbebcd9e0ef0d"
 }

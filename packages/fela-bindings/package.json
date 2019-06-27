@@ -27,8 +27,8 @@
   },
   "dependencies": {
     "@stardust-ui/fela-dom": "^10.5.0",
+    "@stardust-ui/fela-tools": "^10.5.0",
     "fast-loops": "^1.0.0",
-    "fela-tools": "^10.5.0",
     "react-addons-shallow-compare": "^15.6.2",
     "shallow-equal": "^1.0.0"
   },

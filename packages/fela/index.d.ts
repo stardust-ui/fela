@@ -78,3 +78,42 @@ declare module "@stardust-ui/fela-dom" {
     support?: boolean,
   }[];
 }
+
+declare module "@stardust-ui/fela-tools" {
+  import { TRule, TRuleProps, IStyle, IRenderer } from "fela";
+
+  export type TMultiRuleObject<Props = TRuleProps, Styles = {}> = {[key in keyof Styles]: TRule<Props> | IStyle}
+  export type TMultiRuleFunction<Props = TRuleProps, Styles = {}> = (props: Props, renderer: IRenderer) => TMultiRuleObject<Props, Styles>
+  export type TMultiRule<Props = TRuleProps, Styles = {}> = TMultiRuleObject<Props, Styles> | TMultiRuleFunction<Props, Styles>
+
+  export type TPartialMultiRuleObject<Props = TRuleProps, Styles = {}> = Partial<TMultiRuleObject<Props, Styles>>
+  export type TPartialMultiRuleFunction<Props = TRuleProps, Styles = {}> = (props: Props, renderer: IRenderer) => TPartialMultiRuleObject<Props, Styles>
+  export type TPartialMultiRule<Props = TRuleProps, Styles = {}> = TPartialMultiRuleObject<Props, Styles> | TPartialMultiRuleFunction<Props, Styles>
+
+  export type TNormalizedMultiRule<Props = TRuleProps, Styles = {}> = (props: Props, renderer: IRenderer) => {[key in keyof Styles]: TRule<Props>}
+
+  function combineMultiRules<A, SA, B, SB>(
+    a: TMultiRule<A, SA>,
+    b: TMultiRule<B, SB>
+  ): TNormalizedMultiRule<A & B, SA & SB>
+  function combineMultiRules<A, SA, B, SB, C, SC>(
+    a: TMultiRule<A, SA>,
+    b: TMultiRule<B, SB>,
+    c: TMultiRule<C, SC>,
+  ): TNormalizedMultiRule<A & B & C, SA & SB & SC>
+  function combineMultiRules(...rules: Array<TMultiRule>): TNormalizedMultiRule
+
+  function mapValueToMediaQuery(
+    queryValueMap: { [key: string]: string },
+    mapper: ((value: string) => object) | string
+  ): object;
+
+  function renderToElement(
+    renderer: IRenderer,
+    mountNode: { textContent: string },
+  ): (() => void);
+
+  function renderToString(
+    renderer: IRenderer,
+  ): string;
+}

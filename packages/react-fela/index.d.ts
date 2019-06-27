@@ -7,7 +7,7 @@ import {
 import {
   TMultiRule,
   TPartialMultiRule,
-} from "fela-tools";
+} from "@stardust-ui/fela-tools";
 
 declare module "@stardust-ui/react-fela" {
   interface ThemeProviderProps {
