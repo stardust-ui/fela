@@ -1,6 +1,6 @@
 {
   "name": "@stardust-ui/fela",
-  "version": "10.5.0",
+  "version": "10.6.0",
   "description": "State-Driven Styling in JavaScript",
   "typings": "index.d.ts",
   "main": "lib/index.js",
