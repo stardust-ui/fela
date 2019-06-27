@@ -41,12 +41,16 @@ import type {
 } from '../../../flowtypes/DOMRenderer'
 import type { FontProperties } from '../../../flowtypes/FontProperties'
 
-// use default value with document
-const defaultDocumentRef = { target: document, refCount: 1, refId: 0 }
-
 export default function createRenderer(
   config: DOMRendererConfig = {}
 ): DOMRenderer {
+  // use default value with document
+  const defaultDocumentRef = {
+    target: typeof document === 'undefined' ? null : document,
+    refCount: 1,
+    refId: 0,
+  }
+
   let renderer: DOMRenderer = {
     listeners: [],
     keyframePrefixes: config.keyframePrefixes || ['-webkit-', '-moz-'],
