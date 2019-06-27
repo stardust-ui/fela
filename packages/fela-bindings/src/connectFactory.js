@@ -1,7 +1,7 @@
 /* @flow */
 import objectReduce from 'fast-loops/lib/objectReduce'
 import objectEach from 'fast-loops/lib/objectEach'
-import { combineMultiRules } from 'fela-tools'
+import { combineMultiRules } from '@stardust-ui/fela-tools'
 import shallowCompare from 'react-addons-shallow-compare'
 
 import generateDisplayName from './generateDisplayName'

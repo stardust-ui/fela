@@ -66,7 +66,7 @@ declare module "@stardust-ui/fela" {
 }
 
 declare module "@stardust-ui/fela-dom" {
-  import { IRenderer } from 'fela';
+  import { IRenderer } from '@stardust-ui/fela';
 
   function render(renderer: IRenderer): void;
   function rehydrate(renderer: IRenderer): void;
@@ -80,7 +80,7 @@ declare module "@stardust-ui/fela-dom" {
 }
 
 declare module "@stardust-ui/fela-tools" {
-  import { TRule, TRuleProps, IStyle, IRenderer } from "fela";
+  import { TRule, TRuleProps, IStyle, IRenderer } from "@stardust-ui/fela";
 
   export type TMultiRuleObject<Props = TRuleProps, Styles = {}> = {[key in keyof Styles]: TRule<Props> | IStyle}
   export type TMultiRuleFunction<Props = TRuleProps, Styles = {}> = (props: Props, renderer: IRenderer) => TMultiRuleObject<Props, Styles>
