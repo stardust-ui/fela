@@ -1,6 +1,6 @@
 {
   "name": "@stardust-ui/react-fela",
-  "version": "10.6.0",
+  "version": "10.6.1",
   "description": "React bindings for Fela",
   "typings": "index.d.ts",
   "main": "lib/index.js",
@@ -29,8 +29,8 @@
     "react": "^16.3.0"
   },
   "dependencies": {
-    "@stardust-ui/fela-bindings": "^10.6.0",
-    "@stardust-ui/fela-dom": "^10.6.0",
+    "@stardust-ui/fela-bindings": "^10.6.1",
+    "@stardust-ui/fela-dom": "^10.6.1",
     "prop-types": "^15.5.8"
   },
   "publishConfig": {
