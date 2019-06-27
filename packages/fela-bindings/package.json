@@ -1,6 +1,6 @@
 {
   "name": "@stardust-ui/fela-bindings",
-  "version": "10.5.0",
+  "version": "10.6.0",
   "description": "Abstract binding factories for Fela",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -26,7 +26,7 @@
     "@stardust-ui/fela": "*"
   },
   "dependencies": {
-    "@stardust-ui/fela-dom": "^10.5.0",
+    "@stardust-ui/fela-dom": "^10.6.0",
     "fast-loops": "^1.0.0",
     "fela-tools": "^10.5.0",
     "react-addons-shallow-compare": "^15.6.2",
