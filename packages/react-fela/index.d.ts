@@ -3,7 +3,7 @@ import {
   IRenderer,
   TRule,
   IStyle
-} from "fela";
+} from "@stardust-ui/fela";
 import {
   TMultiRule,
   TPartialMultiRule,
@@ -32,6 +32,7 @@ declare module "@stardust-ui/react-fela" {
   interface ProviderProps {
     renderer: object;
     mountNode?: any;
+    target?: Document
   }
 
   interface FelaWithThemeProps<Theme> {
