@@ -6,12 +6,16 @@ const getDocumentRefIndex = (
   documentRefs: DOMRendererDocumentRef[],
   target: Object
 ) =>
-  arrayReduce(documentRefs, (accIndex, documentRef, index) => {
-    if (documentRef.target === target) {
-      return index
-    }
+  arrayReduce(
+    documentRefs,
+    (accIndex, documentRef, index) => {
+      if (documentRef.target === target) {
+        return index
+      }
 
-    return accIndex
-  })
+      return accIndex
+    },
+    null
+  )
 
 export default getDocumentRefIndex
