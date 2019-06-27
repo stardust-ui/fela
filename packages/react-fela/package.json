@@ -33,5 +33,8 @@
     "@stardust-ui/fela-dom": "^10.5.0",
     "prop-types": "^15.5.8"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "gitHead": "4edeeffc5be2e05473a52c24523dbebcd9e0ef0d"
 }
