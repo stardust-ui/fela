@@ -9,7 +9,7 @@ import {
   TPartialMultiRule,
 } from "fela-tools";
 
-declare module "react-fela" {
+declare module "@stardust-ui/react-fela" {
   interface ThemeProviderProps {
     theme: object;
     overwrite?: boolean;
